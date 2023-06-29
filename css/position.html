@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .demo-box{
+            height: 250px;
+            width: 400px;
+            background: linear-gradient(to top right,red,dodgerblue,orange);
+            position: relative;
+            bottom: 20px;
+            right: 20px;
+        }
+        .content{
+            height: 150px;
+            width: 200px;
+            background-color: aqua;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+
+        }
+        .container{
+            height: 300px;
+            width: 600px;
+            margin: auto;
+            position: relative;
+
+        }
+        .container img{
+            height: 100%;
+            width:100% ;   
+        }
+        .container button{
+            background-color: transparent;
+            color: green;
+            font-size: 35px;
+            border: none;
+            position: absolute;
+            top: 45%;
+        }
+        .left{
+            left: 0;
+        }
+        .right{
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        i>static position 
+        ii>relative Position
+        iii> absolute position
+        iv> stickey position
+        v> fixed position
+    </pre>
+    <section class="demo-box"></section>
+    <section class="content"></section>
+    <section class="container">
+        <img src="../images/mahesh.jpg" alt="">
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+    </section>
+</body>
+</html>

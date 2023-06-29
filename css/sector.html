@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* universal selector */
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            color: red;
+            font-size: 50px;
+            background-color: aquamarine;
+            text-align: center;
+            /* border-width: 5px;
+            border-color: blue;
+            border-style: solid; */
+            border: 5px solid blue;
+        }
+        .title{
+            color: rgb(25, 100, 105);
+            border: 3px double red; /* double, dashed,dotted*/
+        }
+        .demo{
+            text-align: right;
+        }
+        #test{
+            background-color: rgba(255, 0, 0, 0.5);
+            border: 20px groove orange; /*rigde is also be in place of groove */
+            outline: 3px solid green;
+            
+        }
+
+        .demo-text{
+            color: black !important;
+            text-shadow: 15px 3px 15px rgba(255, 0, 0, 0.8); /* first for horizental second for vertical and third for bloor ness  negative for first and second is used for left side and up direction bloor is always positive*/
+            font-size: 50px;
+        }
+        #demo-text{
+            color: brown;
+        }
+        /* grouping selector */
+        .title,#test{
+            text-transform: uppercase;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>this is style using element selector</h1>
+    <h1> learn more</h1>
+    <h2 class="title demo">this is calss selector</h2>
+
+    <h2 id="test"> this is a id selector</h2>
+    <h2 class="demo-text" id="demo-text"> lol</h2>
+
+
+</body>
+</html>
+

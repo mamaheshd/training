@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            background-color: rgb(30, 100, 30);
+            display: flex;  
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            justify-content: space-around;
+        }
+        /* ">" is child selector  */
+        .container >.item{
+            height: 200px;
+            width: 300px;
+            background-color: rgb(100, 50, 50);
+            margin: 10px ;
+            display: flex;
+            justify-content: center;
+            /* justify-content: flex-end;  */
+            /* by default justify-content: flex-start */
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start;  default*/
+            /* flex-direction: row; default */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; used to make mobile responsive system */
+            /* flex-direction: column-reverse; */
+
+
+        }
+        .item > .box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(10, 40, 50);
+            border-radius: 20px;
+            /* increase radius value to 50% to make it circle */
+            animation:up-down ease-in-out 3s infinite alternate-reverse;
+        }
+        /* used to declear animation */
+        @keyframes up-down {
+            0%{
+                transform: translatey(-10px);
+            }
+            100%{
+                transform: translatey(10px);
+            }
+        }
+        .item > .box-text{
+            width: 40%;
+            animation: up-down ease-in-out 0.5s infinite alternate;
+        }
+        .item > .box-img{
+            width: 55%;
+            height: 150px;
+            animation: up-down ease-in-out 1s infinite alternate-reverse;
+        }
+        .box-img img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="item">
+            <div class="box"></div>
+        </section>
+        <section class="item">
+            <div class="box-text">
+                <h1>Title</h1>
+
+            </div>
+            <div class="box-img">
+                <img src="../images/mahesh.jpg" alt="no image">
+            </div>
+        </section>
+        <section class="item">
+
+        </section>
+        <section class="item">
+
+        </section>
+        <section class="item">
+
+        </section>
+        <section class="item">
+
+        </section>
+        <section class="item">
+            
+        </section>
+        <section class="item">
+
+        </section>
+        <section class="item">
+
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <button onclick="demo()">click to see the result </button>
+    <h2 id="result"></h2>
+    <img src="../images/images.jpg" alt="no image" width="400">
+    <button ondblclick="change()">click to change image</button>
+    <div  onmouseover="parts()" onmouseout="part1()">
+        <img class="images" src="../images/1.jpg" alt="no images">
+    </div>
+    <script>
+        // onclick, ondblclick, onmouseover, onmouseout, onmousemove, onchange, onkeyup, onkeydown, onload, onmousedown, onmouseup
+
+        const demo=()=>{
+            // document.write(new Date())
+            // dom document Object model 
+            // document.getElementById('result').innerHTML=new Date 
+           
+            document.querySelector('#result').innerHTML=new Date().toLocaleTimeString()  // class xa bhane . and id xa bhane #  
+        }
+        const change=()=>{
+            document.querySelector('img').src='../images/mahesh.jpg'
+        
+        }
+        const parts=()=>{
+            document.querySelector('.images').src='../images/2.jpg'
+        }
+
+        const part1=()=>{
+            document.querySelector('.images').src='../images/1.jpg'
+        }
+    </script>
+</body>
+</html>

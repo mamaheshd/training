@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and padding</title>
+    <style>
+        .demo{
+            height: 200px;
+            width: 400px;
+            /* background-color: rgb(20, 100, 30); */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            padding: 5px;
+            overflow: hidden;
+            /* padding is used to create border between box amd content */
+        }
+        /* shorthand property of margin
+        margin:10px 12px 15px 20px;
+                t     r    b   l
+        margin: 10px 12px 20px;
+                 t    r&l  b 
+        margin: 10px 12px;
+                t&b  r&l 
+        margin: auto (align element in the center in horizontal axis);
+        margin: 10px; */
+        .container{
+            height: 50vh;
+            /* height: 200px; */
+            width: 400px;
+            background-color: rgb(200, 100, 30);
+            /* margin-top: 30px; */
+            margin:30px auto 0;
+            box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.5), -10px -20px 15px rgba(0, 0, 0, 0.5);
+        }
+        /* descendent selector (space) */
+        .demo img{
+            height: 200px;
+            width: 400px;
+            transition: all 3s;
+            filter: grayscale(1.0);
+
+        }
+        /* pesudeoclass selector (:)  negative value flip content*/
+        .demo:hover img{
+            transform: scale(1.5);
+            /* transform: scalex(1.5); */
+            /* transform: scaley(1.5); */
+            filter: none;
+        }
+        .container:hover{
+            transform: translatey(10px);
+        }
+        .container-box{
+            height: 200px;
+            width: 150px;
+            background-color:dodgerblue ;
+            margin: 30px 50px;
+            transform: skew(10deg,10deg);
+            /* transform: skewx(10deg); */
+            /* transform: skewy(10deg); */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <!-- ../ is used to access file one step back    -->
+        <img src="../images/mahesh.jpg" height="200" alt="no image">
+    </div>
+    <div class="container"></div>
+    <div class="container-box"></div>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #232f33;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav h3{
+    color: #ffff;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;
+
+}
+.l{
+    color: #e67e22;
+}
+.o{
+    color: #e74c3c;
+}
+.g{
+    color: #6495ed;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none; 
+}
+ul li a{
+    color: #ffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+}
+ul li .dropdown{
+    background-color: #6495ed;
+    width: 110px;
+    position: absolute;
+    display: none;
+}
+ul li:hover .dropdown{
+display: block;
+}
+.sub-dropdown{
+    background-color: #364044;
+    width: 110px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+.dropdown li:hover .sub-dropdown{
+    display: block;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable in css</title>
+    <style>
+        :root{
+            --black:#3333;
+            --orange:#f38522; 
+            --white:#ffff;
+            --font-size:18px;
+        }
+        .container{
+            background-color: var(--orange);
+            width: 400px;
+            color: var(--white);
+            font-size: var(--font-size);
+            text-align: justify;
+            padding: 20px;
+            --black: #1c2833;
+            
+        }
+        .container button{
+            background-color: var(--black);
+            color: var(--white);
+            border: none;
+            font-size: var(--font-size);
+            padding: 20px;
+        }
+        .demo-box{
+            background-color: var(--orange);
+            font-size: var(--font-size);
+            padding: var(--font-size);
+            width: 500px;
+            margin-top: var(--font-size);
+            text-align: justify;
+            column-count: 2;
+            column-gap: 50px;
+            /* column-rule-style: solid;
+            column-rule-color: blue;
+            column-rule-width: 1px; */
+            column-rule: 1px solid blue;        
+        }
+        .demo-box p::first-line{
+            color: rgb(100, 172,37);
+        }
+        .demo-box p::first-letter{
+            font-size: 30px;
+        }
+        .demo-box p::selection{
+           background-color: red; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorum doloribus minima, modi optio iste expedita! Fuga nesciunt ea ab at libero corrupti quis corporis provident atque, ratione beatae eaque.
+        </p>
+        <button>Read more</button>
+    </div>
+    <div class="demo-box">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora perferendis recusandae consectetur distinctio, accusamus nisi facilis praesentium? Enim illum, molestiae explicabo aspernatur tempore sapiente corrupti est facilis perspiciatis delectus officiis deleniti dolorum alias dolorem quaerat ratione inventore! Amet, incidunt rem voluptatem expedita inventore ullam facere perferendis voluptatibus odio sint corporis, placeat minus quod commodi molestiae atque ipsa earum nisi rerum quam veniam dignissimos! Sit alias corrupti harum aliquid qui assumenda quas voluptatibus temporibus minima autem beatae repudiandae natus adipisci odio totam numquam optio vel voluptate laboriosam, omnis, voluptas nam! Aut itaque deleniti in commodi eaque quas suscipit, quae hic voluptatum! 
+        </p>
+    </div>
+</body>
+</html>

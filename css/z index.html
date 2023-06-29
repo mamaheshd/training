@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index</title>
+    <style>
+        :root{
+            --red:red;
+            --size:5px;
+            --green:green;
+            --blue:blue;
+        }
+        .demo-first{
+            height: 100px;
+            width: 800px;
+            border: var(--size) solid var(--green);
+            position: absolute;
+            top: 15px;
+            left: 20%;
+            z-index: 5;        
+        }
+        .demo-second{
+            height: 150px;
+            width: 150px;
+            border: var(--size) solid var(--red);
+            position: absolute;
+            left: 40%;
+            z-index: 10; 
+        }
+        .demo-third{
+            height: 100px;
+            width: 200px;
+            border: var(--size) solid var(--blue);
+            position: absolute;
+            left: 30%;
+            top: 150px;
+            z-index: 11;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="demo-first"></div>
+    <div class="demo-second"></div>
+    <div class="demo-third"></div>
+</body>
+</html>
