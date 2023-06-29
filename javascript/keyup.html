@@ -6,13 +6,22 @@
     <title>Keypu</title>
 </head>
 <body>
-    <input type="password" name="pwd" id="pwd" onkeyup="show()">
+    <input type="password" name="pwd" id="pwd" >
     <h3 id="result"></h3>
     <script>
-        const show=()=>{
-            const pwdInput=document.getElementById('pwd').value //read value at password pwd is id of password
-            document.querySelector('#result').innerHTML=pwdInput
-        }
+       const pwdInput=document.getElementById('pwd')
+    //    const show=()=>{
+    //     document.querySelector('h3').innerHTML=pwdInput.value
+    //    }
+    //    pwdInput.addEventListener('keyup',show)
+      
+    // pwdInput.addEventListener('keyup',function(){       //anomous function is function without name 
+    //     document.querySelector('h3').innerHTML=pwdInput.value 
+    // })
+    pwdInput.addEventListener('keyup',()=>       //anomous function with arrow function  single line xa bnane function ma {} chindina
+        document.querySelector('h3').innerHTML=pwdInput.value 
+    )
+    
     </script>
 </body>
 </html>
