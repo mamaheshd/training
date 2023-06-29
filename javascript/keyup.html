@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keypu</title>
+</head>
+<body>
+    <input type="password" name="pwd" id="pwd" onkeyup="show()">
+    <h3 id="result"></h3>
+    <script>
+        const show=()=>{
+            const pwdInput=document.getElementById('pwd').value //read value at password pwd is id of password
+            document.querySelector('#result').innerHTML=pwdInput
+        }
+    </script>
+</body>
+</html>
