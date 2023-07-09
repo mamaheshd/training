@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math method</title>
+</head>
+<body>
+    <script>
+        const pi=Math.PI
+        document.write(`${pi}<br>`)
+        // sqrt()-> square root
+        document.write(` sqrt${Math.sqrt(25)}<br>`)
+        // sqaure of 1/2
+        document.write(`sqrt1/2${Math.SQRT1_2}<br>`)
+        // square root of 2
+        document.write(` sqrt2 ${Math.SQRT2}<br>`)
+        // pow()
+        document.write(` pow 2,3${Math.pow(2,3)}<br>`)
+        // abs()->absolute integer value
+        document.write(` abs ${Math.abs(-10)}<br>`)
+        // round()->round integer value to its near value
+        document.write(` round 20.5 ${Math.round(20.5)}<br>`)
+        document.write(`round 20.3  ${Math.round(20.3)}<br>`)
+        // ceil()->ceil integer value to its up integer value
+        document.write(`cill 20.5 ${Math.ceil(20.5)}<br>`)
+        // floor()->floor integer value to its down integer value
+        document.write(`floor 20.6 ${Math.floor(20.6)}<br>`)
+        // trunc()->return integer value only
+        document.write(`trunc 20.3  ${Math.trunc(20.3)}<br>`)
+        // min->minimum value
+        // max-> maximum value
+        document.write(`minimun value ${Math.min(10,-4,-6,34,50)}<br>`)
+        document.write(`maximum value ${Math.max(10,-4,-6,34,50)}<br>`)
+        document.write(` log of 2 ${Math.log(2)} <br>`)
+
+        // ramdom number
+        document.write(` random number ${Math.random()}<br>`)
+        let test=Math.random()*10 //0-9
+        document.write(` test data ${test}<br>`)
+        document.write(`${Math.floor(test)+1}<br>`)
+
+    </script>
+</body>
+</html>
