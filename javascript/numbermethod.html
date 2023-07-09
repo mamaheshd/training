@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method</title>
+</head>
+<body>
+    <script>
+        const num=153.23457468313   
+        // toFixed()=>used to how many digits  to be printed. after decimal point
+        document.write(`${num.toFixed(2)}<br>`)
+        document.write(`${num.toFixed(3)}<br>`)
+        // toPrecision()=> used for how many digital to be printed as a whole
+        document.write(`${num.toPrecision(3)}<br>`)
+        document.write(`${num.toExponential(3)}<br>`)
+        // to convert string to number using following methods
+        // Number()=> 12,14.5
+        // parseInt()=> 12,15
+        // parseFloat()=> 14.5, 220.6
+        const age = parseInt("12.5 years") // if year is at first output is nan
+        document.write(`${  age } <br>`)
+        
+    </script>
+</body>
+</html>
