@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date method</title>
+</head>
+<body>
+    <script>
+        const date=new Date
+        document.write(`${date}<br>`)
+        // to get years use .getFullYear()
+        document.write(` fullyears${date.getFullYear()} <br>`)
+        // to get months use .getMonth() return number only 
+        document.write(`months ${date.getMonth()} <br>`)   
+        // to get days of the weak use .getDay() return number only
+        document.write(`days ${date.getDay()} <br>`) 
+        // to get date use .getDate() ->1-31
+        document.write(` date ${date.getDate()} <br>`)
+        // to get hours uses .getHours() -> 0-23
+        document.write(`hours ${date.getHours()}<br>`)
+        // to get minutes use.getMinutes() -> 0-59
+        document.write(`minuts ${date.getMinutes()}<br>`)
+        // to get seconds use.getSeconds() -> 0-59
+        document.write(` second ${date.getSeconds()}<br>`)
+        // to get milliseconds use.getMilliseconds() -> 0-999
+        document.write(` milliseconds ${date.getMilliseconds()}<br>`)
+        // to get full time
+        document.write(`full time ${date.toLocaleTimeString()}<br>`)
+        // to get full date
+        document.write(`full date ${date.toLocaleDateString()}<br>`)    
+        document.write(`utc time ${date.getUTCHours()}<br>`) 
+        // document.write(`utc date ${date.getUTCDate()}<br>`)
+        // set methds
+        // document.write(` set years ${date.setFullYear(2040)} <br>`)
+        const d=new Date()
+        d.setFullYear(2030,4,11)
+        document.write(` set years ${d} <br>`)
+        date.setHours(20)
+        document.write(` set hours ${date} <br>`)
+        // set interval()
+        const demoFunction=()=>{
+            document.querySelector('h1').innerHTML=new Date().toLocaleTimeString()
+        }
+        setInterval(demoFunction,1000)
+    </script>
+    <h1></h1>
+</body>
+</html>
