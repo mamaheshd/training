@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch form</title>
+</head>
+
+<body>
+    <label for="num1">First number</label> <br>
+    <input type="number" name="num1" id="num1" autofocus>
+    <br>
+    <label for="num2">Second number </label> <br>
+    <input type="number" name="num2" id="num2"> <br>
+    <label for="choose">choose any operator</label> <br>
+    <select name="choose" id="choose">
+        <option value="+">Addition</option>
+        <option value="-">Subtraction</option>
+        <option value="*">Multiplication</option>
+        <option value="/">Division</option>
+        <option value="%">Reminder</option>
+    </select><br><br>
+    <input type="submit" value="Send" onclick="demoFunction()">
+    <h2></h2>
+    <script>
+
+        const demoFunction=() => {
+            const num1 = parseFloat(document.querySelector('#num1').value)
+            const num2 = parseFloat(document.querySelector('#num2').value)
+            const operator = document.getElementById('choose').value
+
+            switch (operator) {
+                case "+":
+                    const sum = num1 + num2
+                    document.querySelector('h2').innerHTML = ` the sum is ${sum}`
+                    break;
+                case "-":
+                    const difference = num1 - num2
+                    document.querySelector('h2').innerHTML = ` the difference is ${difference}`
+                    break;
+                case "*":
+                    const product = num1 * num2
+                    document.querySelector('h2').innerHTML = ` the product is ${product}`
+                    break;
+                case "/":
+                    const quotient = num1 / num2
+                    document.querySelector('h2').innerHTML = ` the quotient is ${quotient}`
+                    break;
+                case "%":
+                    const remainder = num1 % num2
+                    document.querySelector('h2').innerHTML = ` the remainder is ${remainder}`
+                    break;
+                default:
+                    document.querySelector('h2').innerHTML = ` invalid operator`
+            }
+        }    
+    </script>
+</body>
+
+</html>
