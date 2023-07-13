@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread(...)</title>
+</head>
+<body>
+    <script>
+        const test1=[1,2,3,4,5]
+        const test2=[10,20,30,40,50]
+        const test3=[15,25,35,45,55]
+        const finalResult =[...test1,...test2,...test3]
+        document.write(`${finalResult}<br>`)
+        document.write(`${finalResult.includes(20)}`)
+        
+    </script>
+</body>
+</html>
