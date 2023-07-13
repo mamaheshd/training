@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call back function</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <script>
+        const news = [
+            { newsTitle: 'first title', newsContent: 'this is a first content' },
+            { newsTitle: 'second title', newsContent: 'this is a second content' },
+            { newsTitle: 'third title', newsContent: 'this is a third content' }
+        ]
+        //define the function showNews()
+        const showNews = () => {
+            setTimeout(() => {
+                let result = ""
+                news.forEach(post => {
+                    result += `<ul>
+                        <li>${post.newsTitle}</li>
+                        <ul>
+                            <li>${post.newsContent}</li>
+                            </ul>
+                        </ul>`
+                    document.querySelector('div').innerHTML = result
+                })
+            }), 1000
+        }
+
+        //call the function showNews()
+        // showNews()
+
+
+        //define the function addNews()
+        const addNews=(data,callbackFunc)=>{
+            setTimeout(()=>{
+                news.push(data)
+                callbackFunc()
+            },2000)
+        }
+        // call the function addNews()
+        addNews({ newsTitle: 'fourth News', newsContent: 'this is the fourthcontent of the news' },showNews)
+
+    </script>
+</body>
+
+</html>
