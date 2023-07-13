@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>permise</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <script>
+        const news = [
+            { newsTitle: 'first title', newsContent: 'this is a first content' },
+            { newsTitle: 'second title', newsContent: 'this is a second content' },
+            { newsTitle: 'third title', newsContent: 'this is a third content' }
+        ]
+        //define the function showNews()
+        const showNews = () => {
+            setTimeout(() => {
+                let result = ""
+                news.forEach(post => {
+                    result += `<ul>
+                        <li>${post.newsTitle}</li>
+                        <ul>
+                            <li>${post.newsContent}</li>
+                            </ul>
+                        </ul>`
+                    document.querySelector('div').innerHTML = result
+                })
+            }), 1000
+        }
+
+        const addNews = data => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    news.push(data)
+                    const error = false
+                    if (!error) {
+                        resolve()
+                    }
+                    else {
+                        reject('error: something went wrong')
+                    }
+                }, 2000)
+            })
+        }
+        // call the function addNews()
+        addNews({ newsTitle: 'fourth News', newsContent: 'this is the fourthcontent of the news' })
+            .then(showNews)
+            .catch(err => console.log(err))
+    </script>
+</body>
+
+</html>
