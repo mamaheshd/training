@@ -7,3 +7,7 @@ console.log('see the console')
 // Object-> it has a key value pair 
 // eg: {name:'hari',age:25} name is key and hari is value 
 
+export default function demo(){
+    alert('alert box')
+}
+export const name = "ram"
