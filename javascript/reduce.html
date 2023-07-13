@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce</title>
+</head>
+<body>
+    <script>
+        const numbers=[10,20,30 ,40,50]
+        const total=numbers.reduce((accumulator,currentvalue)=>{
+            // accumulator=10
+            // currentvalue =20
+            // accumulator =30
+            // currentvalue =30
+            // accumulator =60            
+            // currentvalue =40
+            // accumulator =100
+            return accumulator+currentvalue
+        },0)
+        document.write(`${total}`)
+
+        const gtotal=numbers.reduceright((accumulators,currentvalues)=>{
+            return accumulators+currentvalues //why it dot working 
+        },0)
+        document.write(`reduce right ${gtotal}`)
+    </script>
+</body>
+</html>
