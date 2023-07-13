@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise.any</title>
+</head>
+
+<body>
+    <script>
+        const myApi1 = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() =>
+                    resolve('Result from the api1'), 25000)
+            })
+        }
+        const myApi2 = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() =>
+                    reject('canot be process further'), 2000)
+            })
+        }
+        const myApi3 = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() =>
+                    resolve('Result from the api3'), 3000)
+            })
+        }
+        Promise.any([myApi1(), myApi2(), myApi3()])
+            .then(results => {
+                console.log('results from api', results)
+            })
+            .catch(err => console.log('something went wrong', err))
+    </script>
+</body>
+
+</html>
