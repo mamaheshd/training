@@ -1,0 +1,16 @@
+regular expressions
+    /... regular expressions is always between these two symbols .../
+    ^-> it checks from the start
+    $-> it checks from the end
+    [a-z]-> it matches only lower case alphabets
+    [A-Z]-> it matches only upper case alphabets
+    [a-zA-Z]-> it matches both lower case alphabets and upper case alphabets
+    [0-9]-> it matches digits only
+    [a-z0-9]-> it matches alphanumeric characters only
+    {minValue,maxValue}->{3,10}
+    {3,} 3 to infinite
+    {3} only three
+    for special character use \eg:\@,\$,\_,\S(space),\D(digit),\W(wprd)
+    ?= -> it means position of character in doesnot matter
+    . -> it matches a single character
+* ->it matches one or more preceding(starting) characters
