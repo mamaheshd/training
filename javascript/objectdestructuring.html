@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            name: 'saksham Pokhrel',
+            address: 'Bhaktapur',
+            phone: 9885223
+        }
+        // const showData=detail=>{
+        //     return `My name is  ${detail.name}. I live in ${detail.address}`
+        // }
+        const showData = ({ name, address, phone }) => {
+            return `My name is  ${name}. I live in ${address}`
+        }
+        const show = showData(student)
+        document.write(`${show}`)
+    </script>
+</body>
+</body>
+</html>
