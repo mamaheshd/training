@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #3323;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.container .demo-box{
+    height: 200px;
+    width: 23%;
+    margin: 10px 0;
+    background-color: rgb(10, 30, 100);
+}
+@media screen and (max-width:912px){
+    .container{
+        background-color: rgb(200, 10, 55);
+    }
+    .container .demo-box{
+        width: 48%;
+    }
+}
+@media screen and (max-width:768px) {
+    .container{
+        background-color: turquoise;
+    }
+    .container .demo-box{
+        width: 99%;
+    }
+}
