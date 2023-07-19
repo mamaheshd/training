@@ -3,7 +3,7 @@ import React from 'react'
 const First = () => {
   return (
     <>
-        <h1>Test</h1>
+        <h1 style={{color:'white',backgroundColor:'red'}}>Test</h1>
         <h2>React</h2>
     </>
   )
