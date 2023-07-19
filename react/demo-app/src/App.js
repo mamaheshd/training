@@ -1,16 +1,18 @@
 import './App.css';
 // import Display from './Display';
 import First from './First';
-import {Second} from './Second';
+import {Second,Hi} from './Second';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <h1>React Js</h1>
       <First/> 
       <hr/>
       <Second/>
+      <Hi/>
       {/* <Display/> */}
+      
     </div>
   );
 }
