@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // import Display from './Display'
 import Layouts from './components/Layouts'
 import Homepage from './pages/Homepage'
+import Products from './pages/Products'
 const MyRoute = () => {
     return (
         <Router>
@@ -14,6 +15,7 @@ const MyRoute = () => {
                 <Route path='/try' element={<Display/>}/> */}
                 <Route path='/' element={<Layouts/>}>
                 <Route index element={<Homepage/>}/>
+                <Route path='products' element={<Products/>}/>
                 </Route>
             </Routes>
         </Router>
