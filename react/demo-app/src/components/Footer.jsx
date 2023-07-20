@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 const Footer = () => {
     return (
         <>
-            <div className="container">
+            <div className="container-fluid">
                 <footer className="py-5">
                     <div className="row">
                         <div className="col-6 col-md-2 mb-3">
@@ -55,9 +55,9 @@ const Footer = () => {
                     <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                         <p>&copy; 2023 Company, Inc. All rights reserved.</p>
                         <ul className="list-unstyled d-flex">
-                            <li className="ms-3"><Link className="link-body-emphasis" to="#"><svg className="bi" width="24" height="24"><use xlink: to="#twitter" /></svg></Link></li>
-                            <li className="ms-3"><Link className="link-body-emphasis" to="#"><svg className="bi" width="24" height="24"><use xlink: to="#instagram" /></svg></Link></li>
-                            <li className="ms-3"><Link className="link-body-emphasis" to="#"><svg className="bi" width="24" height="24"><use xlink: to="#facebook" /></svg></Link></li>
+                            <li className="ms-3"><Link className="link-body-emphasis" to="#"></Link></li>
+                            <li className="ms-3"><Link className="link-body-emphasis" to="#"></Link></li>
+                            <li className="ms-3"><Link className="link-body-emphasis" to="#"></Link></li>
                         </ul>
                     </div>
                 </footer>
