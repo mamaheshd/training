@@ -13,4 +13,4 @@ const Layouts = () => {
     )
 }
 
-export default Layout
+export default Layouts
