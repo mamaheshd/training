@@ -4,7 +4,7 @@ const Card = () => {
     return (
         <>
             <div className="contaner_fluid">
-                <div className="row row-cols-1 row-cols-md-2 g-4">
+                <div className="row row-cols-1 row-cols-md-4 g-4">
                     <div className="col">
                         <div className="card">
                             <img src="/images/1.jpg" className="card-img-top" alt="..."/>
