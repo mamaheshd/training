@@ -17,12 +17,15 @@ const Products = () => {
   },[]) // empty array is passed. it dont load when state is changed
   return (
     <>
-      <Card />
+      {/* <Card />
       {products.map(item=>{
         return(
+          <>
           <h1>{item.title}</h1>
+          <h2>${item.price}</h2>
+          </>
         )
-      })}
+      })} */}
     </>
   )
 }
