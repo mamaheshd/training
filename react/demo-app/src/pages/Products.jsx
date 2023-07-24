@@ -19,7 +19,9 @@ const Products = () => {
     <>
       <div className="contaner_fluid">
         <div className="row row-cols-1 row-cols-md-4 g-4">
-          <Card />
+          {products.map((item, i) => (
+            <Card data={item} key={i} /> //data is props
+          ))}
         </div>
       </div>
       {/* {products.map(item=>{
