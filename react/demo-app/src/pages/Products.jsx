@@ -28,7 +28,7 @@ const Products = () => {
           {limit<products.length&&
           <button className='btn btn-warning' onClick={()=>setLimit(limit+4)
           }>Load more</button>
-          } &nbsp;
+          } &nbsp
           {limit>12&&
           <button className='btn btn-warning' onClick={()=>setLimit(limit-4)
           }>Show less</button> 
