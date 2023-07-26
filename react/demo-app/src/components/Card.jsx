@@ -12,7 +12,7 @@ const Card = (props) => {
                             <div className="card-body">
                                 <h5 className="card-title">{title.slice(0,20)} ....</h5>
                                 <h5>${price}</h5>
-                                <Link to={`/prodectdetails/${id}`} className='btn btn-success'> View Details </Link>    
+                                <Link to={`/productdetails/${id}`} className='btn btn-success'> View Details </Link>    
                             </div>
                         </div>
                     </div>
