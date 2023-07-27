@@ -8,6 +8,7 @@ import Homepage from './pages/Homepage'
 import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
 import Post from './pages/Post'
+import Cart from './pages/Cart'
 
 
 const MyRoute = () => {
@@ -21,6 +22,7 @@ const MyRoute = () => {
                     <Route index element={<Homepage />} />
                     <Route path='products' element={<Products />} />
                     <Route path='productdetails/:productId' element={<ProductDetails />} />
+                    <Route path='cart' element={<Cart/>} />
                     <Route path='post' element={<Post />} />
                 </Route>
             </Routes>
