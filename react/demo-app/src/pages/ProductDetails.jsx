@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+
 const ProductDetails = () => {
     const [product, setProduct] = useState({})
     const params = useParams()
     const id = params.productId
-
+    const local = () => {
+        localStorage.setItem('item', JSON.stringify({ product }))
+    }
     useEffect(() => {
         axios.get(`http://fakestoreapi.com/products/${id}`)
             .then(res => setProduct(res.data))
@@ -26,7 +29,7 @@ const ProductDetails = () => {
                         <p>{product.description}</p>
                         <h4>{product.rating && product.rating.rate}({product.rating && product.rating.count})</h4>
                         <div className="my-2">
-                            <button className='btn btn-warning'> Add to cart</button>
+                            <button className='btn btn-warning' onClick={local}> Add to cart</button>
                         </div>
                     </div>
                 </div>
