@@ -19,7 +19,12 @@ const CartContainer = () => {
                 console.log(err)
             }
         }
-    })
+        // simulate 2 second delay before fetching data
+        const delay=setTimeout(()=>{
+            fetchProduct()
+            clearTimeout(delay)
+        },2000)
+    },[])
   return (
     <>
     
