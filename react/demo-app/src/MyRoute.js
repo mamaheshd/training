@@ -24,6 +24,7 @@ const MyRoute = () => {
                     <Route path='productdetails/:productId' element={<ProductDetails />} />
                     <Route path='cart' element={<Cart/>} />
                     <Route path='post' element={<Post />} />
+                    <Route path='register' element={<Register/>}/>
                 </Route>
             </Routes>
         </Router>
