@@ -1,7 +1,7 @@
 import React from 'react'
 
 const CardsPost = (props) => {
-    const{title,body,id}=props.data
+    const{title,body}=props.data
     return (
         <>
 
