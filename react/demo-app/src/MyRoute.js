@@ -9,7 +9,7 @@ import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
 import Post from './pages/Post'
 import Cart from './pages/Cart'
-
+import Register from './pages/Register'
 
 const MyRoute = () => {
     return (
