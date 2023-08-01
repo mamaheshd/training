@@ -10,6 +10,7 @@ import ProductDetails from './pages/ProductDetails'
 import Post from './pages/Post'
 import Cart from './pages/Cart'
 import Register from './pages/Register'
+import Show from './context/Show'
 
 const MyRoute = () => {
     return (
@@ -25,6 +26,7 @@ const MyRoute = () => {
                     <Route path='cart' element={<Cart/>} />
                     <Route path='post' element={<Post />} />
                     <Route path='register' element={<Register/>}/>
+                    <Route path='context' element={<Show/>}/>
                 </Route>
             </Routes>
         </Router>
