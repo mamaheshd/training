@@ -1,11 +1,11 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import { GlobalContext } from './Global'
 const ComD = () => {
-    const data=useContext(GlobalContext)
+    const data = useContext(GlobalContext)
     return (
         <>
-            <h2>The technology we are learning is  {data} 
- 
+            <h2>The technology we are learning is  {data}
+
             </h2>
         </>
     )
