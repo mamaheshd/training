@@ -11,6 +11,7 @@ import Post from './pages/Post'
 import Cart from './pages/Cart'
 import Register from './pages/Register'
 import Show from './context/Show'
+import TestCart from './redux/TestCart'
 
 const MyRoute = () => {
     return (
@@ -27,6 +28,7 @@ const MyRoute = () => {
                     <Route path='post' element={<Post />} />
                     <Route path='register' element={<Register/>}/>
                     <Route path='context' element={<Show/>}/>
+                    <Route path='redux/cart' element={<TestCart/>}/>
                 </Route>
             </Routes>
         </Router>

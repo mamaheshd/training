@@ -8,9 +8,10 @@ import { legacy_createStore } from 'react' //it help to know compiler that any r
 import { Provider } from 'react-redux'
 
 function App() {
-  const stores=legacy_createStore(cartReducer)
+  const store=legacy_createStore(cartReducer)
   return (
-    <Provider store={stores}> //store is predefined stores is variable
+    <Provider store={store}> 
+    {/* //store is predefined stores is variable */}
       <MyRoute />
     </Provider>
   );
