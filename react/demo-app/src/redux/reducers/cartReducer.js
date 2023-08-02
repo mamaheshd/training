@@ -5,9 +5,9 @@ const initialData={
 const cartReducer=(state=initialData,action)=>{
     // return state
     switch (action.type) {
-        case 'ADD_TO_CART':
+        case 'ADD_ TO_CART':
             return{
-                cartCount:state.cartCount++
+                cartCount:++state.cartCount
             }
             break;
     

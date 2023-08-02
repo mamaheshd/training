@@ -4,9 +4,9 @@ import { useDispatch } from 'react-redux'
 const TestItems = () => {
     const dispatach = useDispatch()
 
-    const add = () => {
+    const add = () => (
         dispatach({type:'ADD_ TO_CART'})
-    }
+    )
     return (
         <>
             <div className="row d-flex justify-content-around">
