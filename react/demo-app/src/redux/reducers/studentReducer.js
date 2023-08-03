@@ -1,4 +1,4 @@
-import cartReducer from "./cartReducer"
+// import cartReducer from "./cartReducer"
 
 const initialData = {
     name:'Rajendra'
@@ -6,6 +6,11 @@ const initialData = {
 
 const studentReducer = (state = initialData, action) => {
     switch (action.type) {
+        case'CHANGE_NAME':
+        return{
+            ...state,
+            name:action.payload
+        }
         default:
             return state
     }
