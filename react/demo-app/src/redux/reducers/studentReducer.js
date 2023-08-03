@@ -1,5 +1,7 @@
+import cartReducer from "./cartReducer"
+
 const initialData = {
-    name: 'Mahesh'
+    name:'Rajendra'
 }
 
 const studentReducer = (state = initialData, action) => {
@@ -8,3 +10,4 @@ const studentReducer = (state = initialData, action) => {
             return state
     }
 }
+export default studentReducer
