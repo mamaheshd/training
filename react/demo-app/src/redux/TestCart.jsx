@@ -1,9 +1,9 @@
 import React from 'react'
-import { UseSelector, useSelector } from 'react-redux/es/hooks/useSelector'
+import { useSelector } from 'react-redux'
 import TestItems from './TestItems'
 
 const TestCart = () => {
-    const data=useSelector(store=>store)
+    const data=useSelector(store=>store.cart)
     return (
         <>
             <h1 className="text-sucess">
